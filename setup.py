@@ -31,7 +31,10 @@ setup(
         'plone.app.caching',
         'plone.app.ldap',
         'beast.securelogin',
-        'Solgema.fullcalendar'
+        'Solgema.fullcalendar',
+        ## Not handled by Solgema?
+        'collective.js.fullcalendar',
+        'collective.js.colorpicker'
         ],
     extras_require=dict(
         test=['plone.app.testing'],

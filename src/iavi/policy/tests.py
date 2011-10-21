@@ -33,3 +33,9 @@ class TestSetup(unittest.TestCase):
         quickinstaller = getToolByName(portal, 'portal_quickinstaller')
         self.assertTrue(quickinstaller.isProductInstalled('Solgema.fullcalendar'))
 
+
+    def test_calendar_support_installed(self):
+        portal = self.layer['portal']
+        quickinstaller = getToolByName(portal, 'portal_quickinstaller')
+        self.assertTrue(quickinstaller.isProductInstalled('collective.js.fullcalendar'))
+
