@@ -31,6 +31,7 @@ setup(
         'plone.app.caching',
         'plone.app.ldap',
         'beast.securelogin',
+        'Solgema.fullcalendar'
         ],
     extras_require=dict(
         test=['plone.app.testing'],

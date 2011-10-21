@@ -28,4 +28,8 @@ class TestSetup(unittest.TestCase):
         quickinstaller = getToolByName(portal, 'portal_quickinstaller')
         self.assertTrue(quickinstaller.isProductInstalled('plone.app.ldap'))
 
+    def test_calendar_installed(self):
+        portal = self.layer['portal']
+        quickinstaller = getToolByName(portal, 'portal_quickinstaller')
+        self.assertTrue(quickinstaller.isProductInstalled('Solgema.fullcalendar'))
 
