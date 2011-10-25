@@ -24,12 +24,17 @@ setup(
     install_requires=[
         'setuptools',
         'Plone',
-        'PIL',
+        'Pillow',
         'collective.uploadify',
         'collective.indexing',
         'jyu.z3cform.datepicker',
         'plone.app.caching',
         'plone.app.ldap',
+        'beast.securelogin',
+        'Solgema.fullcalendar',
+        ## Not handled by Solgema?
+        'collective.js.fullcalendar',
+        'collective.js.colorpicker'
         ],
     extras_require=dict(
         test=['plone.app.testing'],
